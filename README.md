@@ -1,5 +1,5 @@
 # TypoRhythm
-Sass mixin for defining Typographic Rhythm
+*Sass mixin for defining Typographic Rhythm*
 
 A basic foundation of design is Typographic Rythm − This mixin makes it a piece of cake! All you have to do is @include typoRythem in your element, pass a familiar Pixel Font Size* and it calculates a appropriate the line-height, margin-bottom* and padding* in Ems to keep your text nice and neat in a consistant 24px Base Grid*, with less repeated code and micro styling throughout your projects.
 
@@ -7,6 +7,10 @@ A basic foundation of design is Typographic Rythm − This mixin makes it a piec
 - Familiar pixel sizes without compromise
 - Semantic font-size, margin-bottom and padding with just one line
 - Making your text responsive as never been so easy!
+
+## Demo
+Check the demo on codepen!
+http://codepen.io/monteirocode/pen/xbzwwx
 
 ## Using it
 First import typoRhythm in your project.
