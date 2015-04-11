@@ -1,0 +1,39 @@
+//// typoRhythm - Documented
+@mixin typoRhythm($size: 16, $padding: 0, $margin: 1, $base: 24) {
+// 1 Convertes pixel font size into em's
+	// 1.1 Divide $size by 16 plus em;
+  font-size: $size/16+em;
+	// {font-size: 2.25em;} "36" / 16
+	
+// 2 Adds a margin-bottom and padding in em's
+  // 2.1 @if padding bigger than 0
+    // 2.1.1 Multiply padding by $padding passed in @include
+	    // 2.1.1 Divide $base by $size plus em;
+  @if $padding > 0 { padding:$padding*($base/$size)+em; }
+	// {padding: 1.33333em;} 2 * ( 24 / "36" )
+  
+	  // 2.2.1 Multiply padding by $margin passed in @include
+	    // 2.2.1 Divide $base by $size plus em;
+  margin-bottom:$margin*($base/$size)+em;
+	// {margin-bottom: .6666666666666667em;} 1 * ( 24 / "36" )
+
+	
+// 3 Adds a line-height in em's
+	// 3.1 if $size less or equal than $base
+  @if $size <= $base {
+		// 3.1.1 Divide $base by $size plus em;
+    line-height: ($base)/$size+em;
+		// {line-height: 1.5em;} 24 / "16"
+  }
+	
+  // 3.2 Multiply Index by $base ( break points 24 48 72 96... )
+  @for $i from 1 through 100 {
+    // 3.2.1 If $size greater than $base( x Index )
+    @if $size > ($base*$i) {
+			// 3.2.1.1 Divide $base x ( Index + 1 ) by $size plus em;
+			// Ex: size=36 base=48 | size=56 base=72 | size=82 base=96 | 
+      line-height: ($base*($i+1))/$size+em;
+			// {line-height: 1.5em;} 24 / "16"
+    }
+  }
+}
