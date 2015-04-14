@@ -1,0 +1,15 @@
+{
+  "name": "normalize.css",
+  "version": "1",
+  "description": "Sass mixin for creating Typographic Rhythm",
+  "files": [
+    "_typorhythm.scss"
+  ],
+  "homepage": "codepen.io/monteirocode/pen/xbzwwx",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/monteirocode/typoRhythm.git"
+  },
+  "main": "_typorhythm.scss",
+  "author": "Duarte Monteiro"
+}
