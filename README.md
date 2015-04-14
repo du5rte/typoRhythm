@@ -15,7 +15,7 @@ http://codepen.io/monteirocode/pen/xbzwwx
 ## Using it
 First import typoRhythm in your project.
 ```
-@import 'typoRhythm'
+@import 'typoRhythm';
 ```
 
 Start using it!
