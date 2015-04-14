@@ -1,0 +1,16 @@
+{
+  "name": "typoRhythm",
+  "version": "1.0.0",
+  "main": "typoRhythm.scss",
+  "author": "Eddie Monteiro",
+  "ignore": [
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "component.json",
+    "package.json",
+    "test.html",
+    "test.scss.map",
+    "test.scss",
+    "test.css"
+  ]
+}
