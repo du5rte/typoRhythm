@@ -14,19 +14,19 @@ http://codepen.io/monteirocode/pen/xbzwwx
 
 ## Using it
 First import typoRhythm in your project.
-```
+```scss
 @import 'typoRhythm';
 ```
 
 Start using it!
-```
+```scss
 example { 
 	@include typoRhythm(21);
 }
 ```
 
 TypoRhythm will do all the rhythmic math for you in Ems and complile to css:
-```
+```scss
 .example {
 	font-size: 1.3125em;
 	margin-bottom: 1.14286em;
@@ -35,7 +35,7 @@ TypoRhythm will do all the rhythmic math for you in Ems and complile to css:
 ```
 
 Further customize your elements
-```
+```scss
 .example { 
 	@include typoRhythm(21, $padding: 1, $margin: 2);
 }
@@ -43,7 +43,7 @@ Further customize your elements
 Pixel font size* - If no size is defined 16px (1em) will be the default size
 Margin and Padding - Can be increased in using $margin: 3 ( margin-bottom = 3 x 24 ) and $padding 2 ( padding = 2 x 24 )
 24px Base* - the base size can be change but it's recommended to use multiples of 24 for a semantic look (24, 48, 72...)
-```
+```scss
 .example {
   font-size: 1.3125em;
   padding: 1.14286em;
@@ -53,11 +53,11 @@ Margin and Padding - Can be increased in using $margin: 3 ( margin-bottom = 3 x 
 ```
 
 Set all your element default font sizes at once with Sass Maps
-```
+```scss
 $default-font-sizes: (h1:47, h2:34, h3:26, h4:21, h5:18, h6:16, p: 16, ul: 16);
 @include typoRhythm-default;
 ```
-```
+```scss
 h1 {
   font-size: 2.9375em;
   margin-bottom: 0.51064em;
@@ -76,7 +76,11 @@ h3 {
   line-height: 1.84615em;
 }
 
+/*
+... 
 ...
-
 You get the point.
+*/
 ```
+
+Keep the Rhythm Going!
