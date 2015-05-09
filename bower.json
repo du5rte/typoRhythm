@@ -1,16 +1,23 @@
 {
   "name": "typoRhythm",
+  "description": "A easy scss mixin for awesome Typographic Rhythm"
   "version": "1.0.0",
-  "main": "typoRhythm.scss",
-  "author": "Eddie Monteiro",
+  "main": "_typoRhythm.scss",
+  "author": "Eddie Monteiro <monteirocode@gmail.com>",
+  "homepage": "http://codepen.io/monteirocode/pen/xbzwwx"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/monteirocode/typoRhythm.git"
+  }
+  "keywords": [
+    "sass",
+    "scss",
+    "typographic",
+    "typography",
+    "rhythm",
+    "line-height"
+  ],
   "ignore": [
-    "CHANGELOG.md",
-    "CONTRIBUTING.md",
-    "component.json",
-    "package.json",
-    "test.html",
-    "test.scss.map",
-    "test.scss",
-    "test.css"
+    ".*"
   ]
 }
