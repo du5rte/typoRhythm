@@ -1,14 +1,14 @@
 {
   "name": "typoRhythm",
-  "description": "A easy scss mixin for awesome Typographic Rhythm"
+  "description": "A easy scss mixin for awesome Typographic Rhythm",
   "version": "1.0.0",
   "main": "_typoRhythm.scss",
   "author": "Eddie Monteiro <monteirocode@gmail.com>",
-  "homepage": "http://codepen.io/monteirocode/pen/xbzwwx"
+  "homepage": "http://codepen.io/monteirocode/pen/xbzwwx",
   "repository": {
     "type": "git",
     "url": "https://github.com/monteirocode/typoRhythm.git"
-  }
+  },
   "keywords": [
     "sass",
     "scss",
