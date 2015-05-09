@@ -29,7 +29,6 @@ TypoRhythm will do all the rhythmic math for you in Ems and complile to css:
 ```scss
 .example {
 	font-size: 1.3125em;
-	margin-bottom: 1.14286em;
 	line-height: 1.14286em;
 }
 ```
