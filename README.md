@@ -79,7 +79,7 @@ h3 {
 /*
 ... 
 ...
-You get the point.
+You get the gist!
 */
 ```
 
