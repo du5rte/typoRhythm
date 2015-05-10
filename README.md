@@ -56,10 +56,10 @@ Further customize your elements
   line-height: 1.14286;
 }
 ```
-Size - If no size is defined '16' (1em) will be the default
-Margin - Can be increased in using $margin: (value) | $margin: 3
-Padding - Can be increased in using $margin: (value) | $padding: 2
-24px Base* - It calculates around multiples of 24 for a semantic look (24, 48, 72...)
+- Size - If no size is defined '16' (1em) will be the default
+- Margin - Can be increased in using $margin: (value) | $margin: 3
+- Padding - Can be increased in using $margin: (value) | $padding: 2
+- 24px Base* - It calculates around multiples of 24 for a semantic look (24, 48, 72...)
 
 ## Map Elements
 Set all your element default font sizes at once with Sass Maps
