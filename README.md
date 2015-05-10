@@ -8,6 +8,13 @@ A basic foundation of design is Typographic Rythm − This mixin makes it a piec
 - Semantic font-size, margin-bottom and padding with just one line
 - Making your text responsive as never been so easy!
 
+## Installing
+Now Available on bower
+```bash
+$ bower install typoRhythm --save
+```
+
+
 ## Demo
 Check the demo on codepen!
 http://codepen.io/monteirocode/pen/xbzwwx
@@ -51,7 +58,7 @@ Pixel font size* - If no size is defined 16px (1em) will be the default size
 Margin and Padding - Can be increased in using $margin: 3 ( margin-bottom = 3 x 24 ) and $padding 2 ( padding = 2 x 24 )
 24px Base* - the base size can be change but it's recommended to use multiples of 24 for a semantic look (24, 48, 72...)
 
-## Map Header Sizes
+## Map Elements
 Set all your element default font sizes at once with Sass Maps
 ```scss
 $default-font-sizes: (h1:47, h2:34, h3:26, h4:21, h5:18, h6:16, p: 16, ul: 16);
