@@ -64,8 +64,8 @@ Margin and Padding - Can be increased in using $margin: 3 ( margin-bottom = 3 x 
 ## Map Elements
 Set all your element default font sizes at once with Sass Maps
 ```scss
-$default-font-sizes: (h1:47, h2:34, h3:26, h4:21, h5:18, h6:16, p: 16, ul: 16);
-@include typoRhythm-default;
+$default--sizes: (h1:47, h2:34, h3:26, h4:21, h5:18, h6:16, p: 16, ul: 16);
+@include typoRhythm-default($default-sizes);
 ```
 ```scss
 h1 {
