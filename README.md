@@ -1,13 +1,12 @@
-# TypoRhythm
-*Making Typographic Awesome*
+# TypoRhythm is Awesome!
 
 A basic foundation of design is Typographic Rythm − This mixin makes it a piece of cake! All you have to do is @include typoRythem in your element, pass a familiar Pixel Font Size* and it calculates a appropriate the line-height, margin-bottom* and padding* in Ems to keep your text nice and neat in a consistant 24px Base Grid*, with less repeated code and micro styling throughout your projects.
 
 ![alt tag](https://cloud.githubusercontent.com/assets/7394762/7552624/5071ef32-f6b7-11e4-92a9-e21b87ac74af.png)
 
-## Why?
-- Familiar pixel sizes without compromise
-- Semantic font-size, margin-bottom and padding with just one line
+## Easy to Use?
+- Familiar pixel units into em's
+- Semantic font-size, margin-bottom, padding and line-height all with just one line
 - Making your text responsive as never been so easy!
 
 ## Installing
