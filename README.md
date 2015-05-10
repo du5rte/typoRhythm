@@ -4,7 +4,7 @@ A basic foundation of design is Typographic Rythm − This mixin makes it a piec
 
 ![alt tag](https://cloud.githubusercontent.com/assets/7394762/7552624/5071ef32-f6b7-11e4-92a9-e21b87ac74af.png)
 
-## Easy to Use?
+## Easy to Use!
 - Familiar pixel units into em's
 - Semantic font-size, margin-bottom, padding and line-height all with just one line
 - Making your text responsive as never been so easy!
