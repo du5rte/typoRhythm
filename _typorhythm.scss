@@ -13,7 +13,7 @@
 		}
 	}
 }
-// h3 {@include typoRhythm(24, $margin: 1);}
+// e.g. h3 {@include typoRhythm(24, $margin: 1);}
 
 // Default Font Sizes
 // Runs through the $default-font-sizes map
@@ -25,5 +25,5 @@
 		}
 	}
 }
-// $map: (h1:47, h2:34, h3:26, h4:21, h5:18, h6:16, p: 16, ul: 16);
-// @include typoRhythm-default($map);
+// e.g. $map: (h1:47, h2:34, h3:26, h4:21, h5:18, h6:16, p: 16, ul: 16);
+// e.g. @include typoRhythm-default($map);
