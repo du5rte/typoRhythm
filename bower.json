@@ -1,7 +1,7 @@
 {
   "name": "typoRhythm",
   "description": "A easy to use scss mixin for awesome Typographic Rhythm",
-  "version": "1.0.3",
+  "version": "1.0.1",
   "main": "_typoRhythm.scss",
   "author": "Eddie Monteiro <monteirocode@gmail.com>",
   "homepage": "http://codepen.io/monteirocode/pen/xbzwwx",
