@@ -17,7 +17,8 @@ $ bower install typoRhythm --save
 
 ## Demo
 Check the demo on codepen!
-http://codepen.io/monteirocode/pen/xbzwwx
+<p data-height="374" data-theme-id="14935" data-slug-hash="xbzwwx" data-default-tab="result" data-user="monteirocode" class='codepen'>See the Pen <a href='http://codepen.io/monteirocode/pen/xbzwwx/'>TypoRhythm</a> by Eddie Monteiro (<a href='http://codepen.io/monteirocode'>@monteirocode</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 ## Using it
 First import typoRhythm in your project.
