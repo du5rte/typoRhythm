@@ -4,11 +4,7 @@
   "version": "v1.0.0",
   "main": "_typoRhythm.scss",
   "author": "Eddie Monteiro <monteirocode@gmail.com>",
-  "homepage": "http://codepen.io/monteirocode/pen/xbzwwx",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/monteirocode/typoRhythm.git"
-  },
+  "homepage": "http://github.com/monteirocode/typoRhythm",
   "keywords": [
     "sass",
     "scss",
@@ -19,8 +15,6 @@
     "vertical rhythm",
     "line-height"
   ],
-  "ignore": [
-    ".*"
-  ],
+  "ignore": [".*"],
   "license": "MIT"
 }
