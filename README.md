@@ -39,9 +39,6 @@ Further customize your elements
 	@include typoRhythm(21, $padding: 1, $margin: 2);
 }
 ```
-Pixel font size* - If no size is defined 16px (1em) will be the default size
-Margin and Padding - Can be increased in using $margin: 3 ( margin-bottom = 3 x 24 ) and $padding 2 ( padding = 2 x 24 )
-24px Base* - the base size can be change but it's recommended to use multiples of 24 for a semantic look (24, 48, 72...)
 ```scss
 .example {
   font-size: 1.3125em;
@@ -50,7 +47,11 @@ Margin and Padding - Can be increased in using $margin: 3 ( margin-bottom = 3 x 
   line-height: 1.14286;
 }
 ```
+Pixel font size* - If no size is defined 16px (1em) will be the default size
+Margin and Padding - Can be increased in using $margin: 3 ( margin-bottom = 3 x 24 ) and $padding 2 ( padding = 2 x 24 )
+24px Base* - the base size can be change but it's recommended to use multiples of 24 for a semantic look (24, 48, 72...)
 
+## Map Header Sizes
 Set all your element default font sizes at once with Sass Maps
 ```scss
 $default-font-sizes: (h1:47, h2:34, h3:26, h4:21, h5:18, h6:16, p: 16, ul: 16);
@@ -82,4 +83,4 @@ You get the gist!
 */
 ```
 
-Keep the Rhythm Going!
+Keep the Rhythm going!
