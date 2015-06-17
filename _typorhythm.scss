@@ -20,7 +20,7 @@
 @mixin typoRhythm-default($map, $padding:0, $margin:0) {
 	@each $el, $size in $map {
 		#{$el} {
-			// margin: 0; //normalize <h1> margin fix
+			margin: 0; //normalize <h1> margin fix
 			@include typoRhythm($size, $padding, $margin);
 		}
 	}
