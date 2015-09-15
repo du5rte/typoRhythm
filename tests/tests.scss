@@ -1,0 +1,10 @@
+@import "true";
+
+// Import the project
+@import '../typorhythm/typorhythm.scss';
+
+// Import the test files
+@import 'test';
+
+// Run the tests
+@include report();

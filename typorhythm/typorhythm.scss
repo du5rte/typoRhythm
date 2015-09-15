@@ -1,4 +1,5 @@
 // typoRhythm
+
 @mixin typoRhythm($size:16,$padding:0,$margin:0,$line:null) {
 	font-size: $size/16+em;
 	@if $padding > 0 {padding:$padding*(12/$size)+em;}

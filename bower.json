@@ -1,10 +1,7 @@
 {
   "name": "typoRhythm",
-  "description": "A easy to use scss mixin for awesome Typographic Rhythm",
-  "version": "v1.0.0",
-  "main": "_typoRhythm.scss",
-  "author": "Eddie Monteiro <monteirocode@gmail.com>",
-  "homepage": "http://github.com/monteirocode/typoRhythm",
+  "version": "0.0.1",
+  "description": "The Awesome New Typorhythm Sass Framework.",
   "keywords": [
     "sass",
     "scss",
@@ -15,6 +12,10 @@
     "vertical rhythm",
     "line-height"
   ],
+  "main": "typorhythm/_typorhythm.scss",
+  "author": "Eddie Monteiro <monteirocode@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/monteirocode/typorhythm#readme",
   "ignore": [".*"],
-  "license": "MIT"
+  "dependencies": {}
 }
