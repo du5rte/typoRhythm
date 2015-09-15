@@ -1,18 +1,23 @@
 // typoRhythm
 
-@mixin typoRhythm($size:16,$padding:0,$margin:0,$line:null) {
+@mixin typoRhythm($size:16,$padding:null,$margin:null,$line:null) {
+
 	font-size: $size/16+em;
-	@if $padding > 0 {padding:$padding*(12/$size)+em;}
-	@if $margin > 0 {margin-bottom:$margin*(24/$size)+em;}
-	@if $line != null {line-height: $line*(24/$size);
+
+	@if $padding {padding:$padding*(12/$size)+em;}
+	@if $margin {margin-bottom:$margin*(24/$size)+em;}
+
+	@if $line {
+		line-height: $line*(24/$size);
 	} @else if ($line == null) {
 		@if $size <= 24 {line-height: 24/$size;
 		} @else {
-			@for $i from 1 through 100 {
+			@for $i from 1 through 300 {
         @if $size > (24*$i) {line-height: (24*($i+1))/$size+em;}
       }
 		}
 	}
+
 }
 // e.g. h3 {@include typoRhythm(24, $margin: 1);}
 

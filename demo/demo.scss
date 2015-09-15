@@ -7,7 +7,7 @@ $default-sizes: (h1:47, h2:34, h3:26, h4:21, h5:18, h6:16, p: 16, ul: 16);
 
 // Create custom typoSize($size, $padding, $margin) in your elements
 .title			{@include typoRhythm(68, $margin: 2);}
-.example  	{@include typoRhythm(21, $padding: 1);}
+.example  	{@include typoRhythm(21, $padding: 3);}
 .fyi  			{@include typoRhythm(13);}
 
 
@@ -27,7 +27,6 @@ body {
   min-width: 400px;
 	background-image: linear-gradient($colorOne, $colorTwo);
   background-repeat: no-repeat;
-	background-color: $colorTwo;
 }
 @for $index from 1 through 6 {
 	h#{$index}{
