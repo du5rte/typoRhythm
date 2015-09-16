@@ -1,15 +1,16 @@
 // typoRhythm
 
 @mixin typoRhythm($size:16,$padding:null,$margin:null,$line:null) {
-
+	// Font Size
 	font-size: $size/16+em;
-
+	// Padding
 	@if $padding {padding:$padding*(12/$size)+em;}
+	// Margin
 	@if $margin {margin-bottom:$margin*(24/$size)+em;}
-
+	// Line Height
 	@if $line {
 		line-height: $line*(24/$size);
-	} @else if ($line == null) {
+	} @else {
 		@if $size <= 24 {line-height: 24/$size;
 		} @else {
 			@for $i from 1 through 300 {
