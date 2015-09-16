@@ -1,6 +1,6 @@
 {
   "name": "typorhythm",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The Awesome New Typorhythm Sass Framework.",
   "keywords": [],
   "main": "typorhythm/_typorhythm.scss",
