@@ -6,9 +6,9 @@ $default-sizes: (h1:47, h2:34, h3:26, h4:21, h5:18, h6:16, p: 16, ul: 16);
 @include typoRhythm-default($default-sizes, $margin:1);
 
 // Create custom typoSize($size, $padding, $margin) in your elements
-.title			{@include typoRhythm(68, $margin: 2);}
-.example  	{@include typoRhythm(21, $margin: 1, $padding: 3);}
-.fyi  			{@include typoRhythm(13);}
+.title      {@include typoRhythm(68, $margin: 2);}
+.example    {@include typoRhythm(21, $margin: 1, $padding: 3);}
+.fyi        {@include typoRhythm(13);}
 
 
 // DEMO STYLES //
@@ -28,12 +28,12 @@ body {
   margin: 0 auto;
   max-width: 800px;
   min-width: 400px;
-	background-image: linear-gradient($colorOne, $colorTwo);
+  background-image: linear-gradient($colorOne, $colorTwo);
   background-repeat: no-repeat;
 }
 @for $index from 1 through 6 {
-	h#{$index}{
-		font-weight: 800; }
+  h#{$index}{
+    font-weight: 800; }
 }
 b { font-weight: 700; }
 u {
@@ -44,17 +44,17 @@ ul {
   margin-left: 0;
   padding-left: 0; }
 li {
-	&:before {
-		content: " \2014";
-		padding-right: $base/2;} }
+  &:before {
+    content: " \2014";
+    padding-right: $base/2;} }
 pre {
-	padding: $base $base;
-	border-left: 4px solid;
-	font-weight: 700;
-	letter-spacing: 1px;
-	background: complement($dim);
-	overflow: auto; }
+  padding: $base $base;
+  border-left: 4px solid;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: complement($dim);
+  overflow: auto; }
 // Debugger
 body > * {
-	&:hover {background-image: linear-gradient(-90deg, $transparent, $dim);} }
+  &:hover {background-image: linear-gradient(-90deg, $transparent, $dim);} }
 ///////////////////////////////// Demo Styles (End)

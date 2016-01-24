@@ -25,22 +25,22 @@ Import typoRhythm in your project
 Start using it!
 ```scss
 h3 {
-	@include typoRhythm(21);
+  @include typoRhythm(21);
 }
 ```
 
 TypoRhythm will do all the rhythmic math for you in Ems and complile to css:
 ```css
 h3 {
-	font-size: 1.3125rem;
-	line-height: 1.14286em;
+  font-size: 1.3125rem;
+  line-height: 1.14286em;
 }
 ```
 
 Further customize your elements
 ```scss
 h3 {
-	@include typoRhythm(21, $padding: 1, $margin: 2);
+  @include typoRhythm(21, $padding: 1, $margin: 2);
 }
 ```
 ```css
