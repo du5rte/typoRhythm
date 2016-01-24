@@ -1,8 +1,8 @@
 // typoRhythm
 
-@mixin typoRhythm($size:16, $padding:null, $margin:null, $line:null) {
+@mixin typoRhythm($size:16, $padding:null, $margin:null, $line:null, $map:null) {
   // Font Size
-  font-size: $size/16+em;
+  font-size: $size/16+rem;
   // Padding
   @if $padding {padding: $padding * (12/$size)+em;}
   // Margin
@@ -21,16 +21,14 @@
       }
     }
   }
-
 }
 // e.g. h3 {@include typoRhythm(24, $margin: 1);}
 
-// Default Font Sizes
-// Runs through the $default-font-sizes map
-@mixin typoRhythm-default($map, $padding:0, $margin:0) {
+// typoRhythm Generator
+@mixin typoRhythmGenerator($map, $padding:null, $margin:null, $line:null) {
   @each $element, $size in $map {
     #{$element} {
-      @include typoRhythm($size, $padding, $margin);
+      @include typoRhythm($size, $padding, $margin, $line);
     }
   }
 }

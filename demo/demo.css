@@ -1,66 +1,58 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:300,700,800);
 h1 {
-  font-size: 2.9375em;
-  padding: 0em;
+  font-size: 2.9375rem;
   margin-bottom: 0.51064em;
   line-height: 1.02128; }
 
 h2 {
-  font-size: 2.125em;
-  padding: 0em;
+  font-size: 2.125rem;
   margin-bottom: 0.70588em;
   line-height: 1.41176; }
 
 h3 {
-  font-size: 1.625em;
-  padding: 0em;
+  font-size: 1.625rem;
   margin-bottom: 0.92308em;
   line-height: 1.84615; }
 
 h4 {
-  font-size: 1.3125em;
-  padding: 0em;
+  font-size: 1.3125rem;
   margin-bottom: 1.14286em;
   line-height: 1.14286; }
 
 h5 {
-  font-size: 1.125em;
-  padding: 0em;
+  font-size: 1.125rem;
   margin-bottom: 1.33333em;
   line-height: 1.33333; }
 
 h6 {
-  font-size: 1em;
-  padding: 0em;
+  font-size: 1rem;
   margin-bottom: 1.5em;
   line-height: 1.5; }
 
 p {
-  font-size: 1em;
-  padding: 0em;
+  font-size: 1rem;
   margin-bottom: 1.5em;
   line-height: 1.5; }
 
 ul {
-  font-size: 1em;
-  padding: 0em;
+  font-size: 1rem;
   margin-bottom: 1.5em;
   line-height: 1.5; }
 
 .title {
-  font-size: 4.25em;
+  font-size: 4.25rem;
   margin-bottom: 0.70588em;
   line-height: 0.70588;
   line-height: 1.05882; }
 
 .example {
-  font-size: 1.3125em;
+  font-size: 1.3125rem;
   padding: 1.71429em;
   margin-bottom: 1.14286em;
   line-height: 1.14286; }
 
 .fyi {
-  font-size: 0.8125em;
+  font-size: 0.8125rem;
   line-height: 1.84615; }
 
 html {
