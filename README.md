@@ -8,8 +8,8 @@ Getting Vertical Rhythm as never been so easy! Pass `@include typoRhythm( )` in 
 ## Installing
 Now Available on bower
 ```bash
-$ bower install --save typoRhythm
-$ npm install --save typoRhythm
+$ bower install --save typorhythm
+$ npm install --save typorhythm
 ```
 
 ## Demo
