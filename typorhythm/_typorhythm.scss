@@ -16,7 +16,7 @@
 		} @else {
 			@for $i from 1 through 100 {
         @if $size >= (24 * $i) {
-					line-height: (( 24 * ($i+1) ) / $size)+em;
+					line-height: (( 24 * ($i+1) ) / $size);
 				}
       }
 		}

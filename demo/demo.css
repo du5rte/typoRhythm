@@ -1,55 +1,47 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:300,700,800);
 h1 {
-  margin: 0;
   font-size: 2.9375em;
   padding: 0em;
   margin-bottom: 0.51064em;
-  line-height: 1.02128em; }
+  line-height: 1.02128; }
 
 h2 {
-  margin: 0;
   font-size: 2.125em;
   padding: 0em;
   margin-bottom: 0.70588em;
-  line-height: 1.41176em; }
+  line-height: 1.41176; }
 
 h3 {
-  margin: 0;
   font-size: 1.625em;
   padding: 0em;
   margin-bottom: 0.92308em;
-  line-height: 1.84615em; }
+  line-height: 1.84615; }
 
 h4 {
-  margin: 0;
   font-size: 1.3125em;
   padding: 0em;
   margin-bottom: 1.14286em;
   line-height: 1.14286; }
 
 h5 {
-  margin: 0;
   font-size: 1.125em;
   padding: 0em;
   margin-bottom: 1.33333em;
   line-height: 1.33333; }
 
 h6 {
-  margin: 0;
   font-size: 1em;
   padding: 0em;
   margin-bottom: 1.5em;
   line-height: 1.5; }
 
 p {
-  margin: 0;
   font-size: 1em;
   padding: 0em;
   margin-bottom: 1.5em;
   line-height: 1.5; }
 
 ul {
-  margin: 0;
   font-size: 1em;
   padding: 0em;
   margin-bottom: 1.5em;
@@ -58,8 +50,8 @@ ul {
 .title {
   font-size: 4.25em;
   margin-bottom: 0.70588em;
-  line-height: 0.70588em;
-  line-height: 1.05882em; }
+  line-height: 0.70588;
+  line-height: 1.05882; }
 
 .example {
   font-size: 1.3125em;
@@ -71,6 +63,9 @@ ul {
   font-size: 0.8125em;
   line-height: 1.84615; }
 
+html {
+  min-height: 100%; }
+
 body {
   color: white;
   font: 100% 'Raleway', sans-serif;
@@ -78,7 +73,7 @@ body {
   margin: 0 auto;
   max-width: 800px;
   min-width: 400px;
-  background-image: linear-gradient(#1DE9B6, #4FC3F7);
+  background-image: linear-gradient(#2afac6, #4ff7f2);
   background-repeat: no-repeat; }
 
 h1 {

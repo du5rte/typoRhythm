@@ -1,7 +1,7 @@
 {
   "name": "typorhythm",
-  "version": "1.0.3",
-  "description": "The Awesome New Typorhythm Sass Framework.",
+  "version": "1.1.0",
+  "description": "A sass mixin for Typographic Rhythm",
   "keywords": [],
   "main": "typorhythm/_typorhythm.scss",
   "scripts": {
@@ -20,12 +20,12 @@
   "homepage": "https://github.com/monteirocode/typorhythm#readme",
   "dependencies": {},
   "devDependencies": {
-    "browser-sync": "^2.7.1",
+    "browser-sync": "*",
     "gulp": "gulpjs/gulp#4.0",
-    "gulp-load-plugins": "^0.10.0",
-    "gulp-mocha": "^2.1.3",
-    "gulp-sass": "^2.0.3",
-    "node-sass": "^3.2.0",
-    "sass-true": "^2.0.2"
+    "gulp-load-plugins": "*",
+    "gulp-mocha": "*",
+    "gulp-sass": "*",
+    "node-sass": "^3.4.2",
+    "sass-true": "*"
   }
 }
