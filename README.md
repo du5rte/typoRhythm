@@ -1,6 +1,6 @@
 # Typography Magic!
 
-Getting Vertical Rhythm as never been so easy! Pass `@include typoRhythm( )` in your element with a familiar pixel Font Size and it calculates a appropriate the `font-size`, `line-height`, `margin-bottom` and `padding` in `rem`.
+Getting Vertical Rhythm as never been so easy! Pass `@include typoRhythm( )` in your element with a familiar pixel Font Size and it calculates the appropriate `font-size`, `line-height`, `margin-bottom` and `padding` in `rem` units.
 
 ![alt tag](./demo/screenshot.png)
 
