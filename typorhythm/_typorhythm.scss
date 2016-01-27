@@ -1,36 +1,41 @@
 // typoRhythm
 
-@mixin typoRhythm($size:16, $padding:null, $margin:null, $line:null, $map:null) {
+$typorhythm_base: 24;
+
+
+@function toEms($size) {
+  @return $typorhythm_base / $size * 1em;
+}
+
+@function lineHeight($size, $base:$typorhythm_base) {
+  @return $base / $size;
+}
+
+@function responsiveLineHeight($size) {
+  $remaining: $size % $typorhythm_base;
+  $next_base: $typorhythm_base + ($size - $remaining);
+  @return if($remaining > 0, lineHeight($size, $next_base), 1);
+}
+
+@mixin typoRhythm($size:16, $padding:null, $margin:null, $line-height:null) {
   // Font Size
-  font-size: $size/16+rem;
+  font-size: $size/16 * 1rem;
   // Padding
-  @if $padding {padding: $padding * (12/$size)+em;}
+  @if $padding {padding: $padding * toEms($size);}
   // Margin
-  @if $margin {margin-bottom: $margin * (24/$size)+em;}
+  @if $margin {margin-bottom: $margin * toEms($size);}
   // Line Height
-  @if $line {
-    line-height: $line * (24/$size);
+  @if $line-height {
+    line-height: $line-height * lineHeight($size);
   } @else {
-    @if $size <= 24 {
-      line-height: 24/$size;
-    } @else {
-      @for $i from 1 through 100 {
-        @if $size >= (24 * $i) {
-          line-height: (( 24 * ($i+1) ) / $size);
-        }
-      }
-    }
+    line-height: responsiveLineHeight($size);
   }
 }
-// e.g. h3 {@include typoRhythm(24, $margin: 1);}
 
-// typoRhythm Generator
-@mixin typoRhythmGenerator($map, $padding:null, $margin:null, $line:null) {
+@mixin typoRhythmGenerator($map, $padding:null, $margin:null, $line-height:null) {
   @each $element, $size in $map {
     #{$element} {
-      @include typoRhythm($size, $padding, $margin, $line);
+      @include typoRhythm($size, $padding, $margin, $line-height);
     }
   }
 }
-// e.g. $map: (h1:47, h2:34, h3:26, h4:21, h5:18, h6:16, p: 16, ul: 16);
-// e.g. @include typoRhythm-default($map);

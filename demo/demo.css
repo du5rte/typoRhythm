@@ -40,14 +40,13 @@ ul {
   line-height: 1.5; }
 
 .title {
-  font-size: 4.25rem;
-  margin-bottom: 0.70588em;
-  line-height: 0.70588;
-  line-height: 1.05882; }
+  font-size: 4.5rem;
+  margin-bottom: 0.66667em;
+  line-height: 1; }
 
 .example {
   font-size: 1.3125rem;
-  padding: 1.71429em;
+  padding: 1.14286em;
   margin-bottom: 1.14286em;
   line-height: 1.14286; }
 

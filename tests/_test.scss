@@ -51,7 +51,7 @@
       }
       @include expect {
         font-size: 1rem;
-        padding: 0.75em;
+        padding: 1.5em;
         line-height: 1.5;
 
       }
@@ -62,7 +62,7 @@
       }
       @include expect {
         font-size: 1.625rem;
-        padding: 0.46154em;
+        padding: 0.92308em;
         line-height: 1.84615;
       }
     }
@@ -71,7 +71,7 @@
   @include test('@mixin typoRhythm($line)') {
     @include assert('Outputs a font size and custom line height for 16px.') {
       @include input {
-        @include typoRhythm(16, $line:2)
+        @include typoRhythm(16, $line-height:2)
       }
       @include expect {
         font-size: 1rem;
@@ -81,7 +81,7 @@
     }
     @include assert('Outputs a font size and custom line height for 26px.') {
       @include input {
-        @include typoRhythm(26, $line:2)
+        @include typoRhythm(26, $line-height:2)
       }
       @include expect {
         font-size: 1.625rem;
