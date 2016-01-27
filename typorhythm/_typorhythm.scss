@@ -1,19 +1,19 @@
 // typoRhythm
 
-$typorhythm_base: 24;
+$typorhythm_default_base: 24;
 
 
 @function toEms($size) {
-  @return $typorhythm_base / $size * 1em;
+  @return $typorhythm_default_base / $size * 1em;
 }
 
-@function lineHeight($size, $base:$typorhythm_base) {
+@function lineHeight($size, $base:$typorhythm_default_base) {
   @return $base / $size;
 }
 
-@function responsiveLineHeight($size) {
-  $remaining: $size % $typorhythm_base;
-  $next_base: $typorhythm_base + ($size - $remaining);
+@function responsiveLineHeight($size, $base:$typorhythm_default_base) {
+  $remaining: $size % $base;
+  $next_base: $base + ($size - $remaining);
   @return if($remaining > 0, lineHeight($size, $next_base), 1);
 }
 
