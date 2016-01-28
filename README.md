@@ -37,21 +37,6 @@ h3 {
 }
 ```
 
-Further customize your elements
-```scss
-h3 {
-  @include typoRhythm(21, $padding: 1, $margin: 2);
-}
-```
-```css
-h3 {
-  font-size: 1.3125em;
-  padding: 1.14286em;
-  margin-bottom: 2.28571em;
-  line-height: 1.14286;
-}
-```
-
 ## Take control
 
 Parameters:
@@ -65,6 +50,21 @@ Change default base or fontsize:
 ```scss
 $typorhythm_default_base: 24 !default;
 $typorhythm_default_fontsize: 16 !default;
+```
+
+Example:
+```scss
+h3 {
+  @include typoRhythm(21, $padding: 1, $margin: 2);
+}
+```
+```css
+h3 {
+  font-size: 1.3125em;
+  padding: 1.14286em;
+  margin-bottom: 2.28571em;
+  line-height: 1.14286;
+}
 ```
 
 ## Generator
