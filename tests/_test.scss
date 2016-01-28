@@ -1,6 +1,6 @@
 @include test-module('typorhythm') {
 
-  @include test('@mixin typoRhythm()') {
+  @include test('@mixin typoRhythm($size)') {
     @include assert('Outputs font-size and line-height for 16px') {
       @include input {
         @include typoRhythm(16)

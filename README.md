@@ -29,7 +29,7 @@ h3 {
 }
 ```
 
-TypoRhythm will do all the rhythmic math for you in Ems and complile to css:
+TypoRhythm will do the rhythmic math for you in `ems` and compile to css:
 ```css
 h3 {
   font-size: 1.3125rem;
@@ -52,19 +52,30 @@ h3 {
 }
 ```
 
-- Size - If no size is defined '16' (1em) will be the default
-- Margin - Can be increased in using $margin: (value) | $margin: 3
-- Padding - Can be increased in using $margin: (value) | $padding: 2
-- 24px Base* - It calculates around multiples of 24 for a semantic look (24, 48, 72...)
+## Take control
 
+Parameters:
+- `$size` expects a `number` e.g. `14, 26, 47, 56`
+- `$padding` expects a `number` e.g. `0.5, 1, 2` * `$base:24`
+- `$margin` expects a `number` e.g. `0.5, 1, 2` * `$base:24`
+- `$line-height` expects a `number` e.g. `0.5, 1, 2` * `$base:24`, should be left to `null`
+- `$unit` expect a `string` e.g. `em, rem`
 
-## Map Elements
-Set all your element default font sizes at once with Sass Maps
+Change default base or fontsize:
 ```scss
-$default-sizes: (h1:47, h2:34, h3:26, h4:21, h5:18, h6:16, p: 16, ul: 16);
-@include typoRhythm-default($default-sizes);
+$typorhythm_default_base: 24 !default;
+$typorhythm_default_fontsize: 16 !default;
 ```
+
+## Generator
+Style multiple elements at once!
+
 ```scss
+$sizeMap: ( h1:47, h2:34, h3:26, h4:21, h5:18, h6:16, p: 16, ul: 16 );
+
+@include typoRhythmGenerator($sizeMap, $margin: 1);
+```
+```css
 h1 {
   font-size: 2.9375rem;
   margin-bottom: 0.51064em;

@@ -21,7 +21,7 @@ $typorhythm_default_fontsize: 16 !default;
   @return if($remaining > 0, lineHeight($size, $next_base), 1);
 }
 
-@mixin typoRhythm($size:16, $padding:null, $margin:null, $line-height:null, $unit:null) {
+@mixin typoRhythm($size, $padding:null, $margin:null, $line-height:null, $unit:null) {
   // Font Size
   font-size: fontSize($size, $unit);
   // Padding
