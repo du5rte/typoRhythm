@@ -1,11 +1,11 @@
 {
   "name": "typorhythm",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "A JS module and Sass mixin for Typographic Rhythm",
   "keywords": [],
-  "main": "typorhythm/typorhythm.js",
+  "main": "typorhythm/typorhythm.es5.js",
   "scripts": {
-    "dev": "gulp",
+    "dev": "NODE_ENV=development gulp",
     "build": "NODE_ENV=production gulp",
     "test": "mocha"
   },
@@ -35,8 +35,10 @@
     "eslint": "*",
     "eslint-loader": "*",
     "gulp": "gulpjs/gulp#4.0",
+    "gulp-babel": "*",
     "gulp-load-plugins": "*",
     "gulp-mocha": "*",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "*",
     "node-sass": "*",
     "react": "*",

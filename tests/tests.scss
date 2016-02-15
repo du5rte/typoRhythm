@@ -6,7 +6,7 @@
 @include test-module('Sass Version') {
 
   @include test('@mixin typoRhythm($size)') {
-    @include assert('Outputs font-size and line-height for 16px') {
+    @include assert('should output font-size and line-height for size 16') {
       @include input {
         @include typoRhythm(16)
       }
@@ -15,7 +15,7 @@
         line-height: 1.5;
       }
     }
-    @include assert('Outputs font-size and line-height for 26px') {
+    @include assert('should output font-size and line-height for size 26') {
       @include input {
         @include typoRhythm(26)
       }
@@ -27,7 +27,7 @@
   }
 
   @include test('@mixin typoRhythm($margin)') {
-    @include assert('Outputs default plus margin-bottom for $size: 16') {
+    @include assert('should output default plus margin-bottom for size 16') {
       @include input {
         @include typoRhythm(16, $margin:1)
       }
@@ -37,7 +37,7 @@
         line-height: 1.5;
       }
     }
-    @include assert('Outputs default plus margin-bottom for $size: 26') {
+    @include assert('should output default plus margin-bottom for size 26') {
       @include input {
         @include typoRhythm(26, $margin:1)
       }
@@ -50,7 +50,7 @@
   }
 
   @include test('@mixin typoRhythm($padding)') {
-    @include assert('Outputs default plus padding for $size: 16') {
+    @include assert('should output default plus padding for size 16') {
       @include input {
         @include typoRhythm(16, $padding:1)
       }
@@ -61,7 +61,7 @@
 
       }
     }
-    @include assert('Outputs default plus padding for $size: 26') {
+    @include assert('should output default plus padding for size 26') {
       @include input {
         @include typoRhythm(26, $padding:1)
       }
@@ -74,7 +74,7 @@
   }
 
   @include test('@mixin typoRhythm($line)') {
-    @include assert('Outputs default plus custom line-height for $size: 16') {
+    @include assert('should output default plus custom line-height for size 16') {
       @include input {
         @include typoRhythm(16, $line-height:2)
       }
@@ -84,7 +84,7 @@
 
       }
     }
-    @include assert('Outputs default plus custom line-height for $size: 26') {
+    @include assert('should output default plus custom line-height for size 26') {
       @include input {
         @include typoRhythm(26, $line-height:2)
       }
@@ -96,7 +96,7 @@
   }
 
   @include test('@mixin typoRhythm($unit)') {
-    @include assert('Outputs font-size in Ems for $size: 16') {
+    @include assert('should output font-size in Ems for size 16') {
       @include input {
         @include typoRhythm(16, $unit:'em')
       }
@@ -105,7 +105,7 @@
         line-height: 1.5;
       }
     }
-    @include assert('Outputs font-size in Rems for $size: 26') {
+    @include assert('should output font-size in Rems for size 26') {
       @include input {
         @include typoRhythm(26, $unit:'rem')
       }

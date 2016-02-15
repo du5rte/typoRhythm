@@ -18,7 +18,7 @@ function errorHandler(error) {
 var compiler = webpack(require('./webpack.config.js'))
 
 // Webpack Logger
-function webpackLogger(done) {
+function webpackLog(done) {
   return function(error, stats) {
     if (error) { throw new errorHandler(error)
     } else {
@@ -40,12 +40,18 @@ gulp.task('styles', function () {
 gulp.task('test', function () {
   return gulp.src(`${settings.paths.tests}/*.js`, {read: false})
     .pipe($.mocha()
-    .on('error', errorHandler));
-});
+    .on('error', errorHandler))
+})
 
 // Webpack Bundler
 gulp.task('bundle', function(done) {
-  compiler.run(webpackLogger(done))
+
+  compiler.run(webpackLog(done))
+
+  return gulp.src(`${settings.paths.source}/${settings.name}.js`)
+    .pipe($.babel())
+    .pipe($.rename( {suffix: '.es5'} ))
+    .pipe(gulp.dest( settings.paths.source ))
 })
 
 // Watcher
