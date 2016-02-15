@@ -1,0 +1,17 @@
+@import 'typorhythm/typorhythm';
+
+
+// Create custom typoSize($size, $padding, $margin) in your elements
+.title {
+  @include typoRhythm(72, $margin: 2);
+}
+
+pre {
+  @include typoRhythm(21, $margin: 1, $padding: 1);
+}
+
+// Use a map to define all elements at once
+$map: (h1:47, h2:34, h3:26, h4:21, h5:18, h6:16, p: 16, ul: 16);
+
+// And include it in your project
+@include typoRhythmGenerator($map, $margin:1);

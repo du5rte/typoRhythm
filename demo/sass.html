@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>typoRhythm</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:300,700,800">
+    <link rel="stylesheet" href="http://basehold.it/24/255/255/255/0.4">
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="sass.css">
+  </head>
+  <body>
+
+<h1 class="title">TypoRhythm</h1>
+<h1>Heading One</h1>
+<h2>Heading Two</h2>
+<h3>Heading Three</h3>
+<h4>Heading Four</h4>
+<h5>Heading Five</h5>
+<h6>Heading Six</h6>
+<p>
+  A basic foundation of design is <b>Typography</b> &minus;
+  This mixin is aimed to create <u>typographic rhythm</u> with css styles using <b>Sass</b>.
+  It calculates the appropriate font-size, line-height,
+  margin-bottom and padding in <b>Ems</b> while keeping it in a neat <b>24px</b> Base Vertical Grid.
+
+</p>
+<pre class="example"><span style="opacity:0.5">pre {</span>
+  <span style="opacity:0.75">@include</span> typoRhythm(21, $margin: 1, $padding: 1)<span style="opacity:0.5">;</span>
+<span style="opacity:0.5">}</span>
+
+<span style="opacity:0.5">pre {</span>
+  <span style="opacity:0.75">font-size:</span> 1.3125em<span style="opacity:0.5">;</span>
+  <span style="opacity:0.75">padding:</span> 2.28571em<span style="opacity:0.5">;</span>
+  <span style="opacity:0.75">margin-bottom:</span> 1.14286em<span style="opacity:0.5">;</span>
+  <span style="opacity:0.75">line-height:</span> 1.14286em<span style="opacity:0.5">;</span>
+<span style="opacity:0.5">}</span></pre>
+
+<ul>
+  <li>Full control with simple API</li>
+  <li>Pixels to Ems</li>
+  <li>Responsive</li>
+</ul>
+
+    <script async src="index.min.js"></script>
+  </body>
+</html>

@@ -1,43 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Typographic typoRhythm</title>
+    <title>typoRhythm</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:300,700,800">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="http://basehold.it/24/255/255/255/0.4">
     <link rel="stylesheet" href="demo.css">
   </head>
   <body>
-    <h1 class="title">TypoRhythm</h1>
-    <h1>Heading One</h1>
-    <h2>Heading Two</h2>
-    <h3>Heading Three</h3>
-    <h4>Heading Four</h4>
-    <h5>Heading Five</h5>
-    <h6>Heading Six</h6>
-    <p>A basic foundation of design is <b>Typographic Rythm</b> &minus; This mixin makes it a piece of cake! All you have to do is <b>@include typoRythem</b> in your element, pass a familiar
-      <u>Pixel Font Size*</u> and it calculates a appropriate the line-height, margin-bottom* and padding* in
-      <u>Ems</u> to keep your text nice and neat in a consistant
-      <u>24px Base Grid*</u>, with less repeated code and micro styling throughout your projects.
-    </p>
-    <ul>
-      <li>Familiar pixel sizes without compromise</li>
-      <li>Semantic font-size, margin-bottom and padding with just one  line </li>
-      <li>Making your text responsive as never been so easy!</li>
-    </ul>
-<pre class="example">
-.example {
-  @include typoRhythm(21, $padding: 1);
-}
 
-.example {
-  font-size: 1.3125em;
-  padding: 2.28571em;
-  margin-bottom: 1.14286em;
-  line-height: 1.14286em;
-}</pre>
-    <p class="fyi">Pixel font size* - If no size is defined 16px (1em) will be the default size<br/>Margin and Padding - Can be increased in using $margin: 3 ( margin-bottom =  3 x 24 ) and $padding 2 ( padding =  2 x 24 )<br/>24px Base* - the base size can be change but it&apos;s recommended to use multiples of 24 for a semantic look (24, 48, 72...)</p>
+    <div id="demo"></div>
 
+    <script async src="typorhythm.min.js"></script>
   </body>
 </html>

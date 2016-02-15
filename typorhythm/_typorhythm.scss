@@ -1,39 +1,29 @@
-// typoRhythm
+$typorhythm_base: 24 !default;
+$typorhythm_fontsize: 16 !default;
 
-$typorhythm_default_base: 24 !default;
-$typorhythm_default_fontsize: 16 !default;
-
-@function fontSize($size, $unit){
-  @return $size / $typorhythm_default_fontsize * if($unit == 'rem', 1rem, 1em);
+@function fontSize($size, $unit:'em'){
+  @return $size / $typorhythm_fontsize + if($unit == 'rem', rem, em);
 }
 
-@function toEms($size) {
-  @return $typorhythm_default_base / $size * 1em;
+@function baseContext($size, $multipler: 0) {
+  @return $multipler * ($typorhythm_base / $size) + em;
 }
 
-@function lineHeight($size, $base:$typorhythm_default_base) {
+@function lineHeight($size, $base:$typorhythm_base) {
   @return $base / $size;
 }
 
-@function responsiveLineHeight($size, $base:$typorhythm_default_base) {
-  $remaining: $size % $base;
-  $next_base: $base + ($size - $remaining);
-  @return if($remaining > 0, lineHeight($size, $next_base), 1);
+@function lineHeightContext($size) {
+  $remaining: $size % $typorhythm_base;
+  $biggerBase: $typorhythm_base + ($size - $remaining);
+  @return if($remaining > 0, lineHeight($size, $biggerBase), 1);
 }
 
 @mixin typoRhythm($size, $padding:null, $margin:null, $line-height:null, $unit:null) {
-  // Font Size
   font-size: fontSize($size, $unit);
-  // Padding
-  @if $padding {padding: $padding * toEms($size);}
-  // Margin
-  @if $margin {margin-bottom: $margin * toEms($size);}
-  // Line Height
-  @if $line-height {
-    line-height: $line-height * lineHeight($size);
-  } @else {
-    line-height: responsiveLineHeight($size);
-  }
+  padding: if($padding, baseContext($size, $padding), null);
+  margin-bottom: if($margin, baseContext($size, $margin), null);
+  line-height: if($line-height, $line-height * lineHeight($size), lineHeightContext($size));
 }
 
 @mixin typoRhythmGenerator($map, $padding:null, $margin:null, $line-height:null, $unit:null) {

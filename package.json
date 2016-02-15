@@ -1,12 +1,13 @@
 {
   "name": "typorhythm",
   "version": "1.5.0",
-  "description": "A sass mixin for Typographic Rhythm",
+  "description": "A JS module and Sass mixin for Typographic Rhythm",
   "keywords": [],
-  "main": "typorhythm/_typorhythm.scss",
+  "main": "typorhythm/typorhythm.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp"
+    "dev": "gulp",
+    "build": "NODE_ENV=production gulp",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -20,12 +21,30 @@
   "homepage": "https://github.com/monteirocode/typorhythm#readme",
   "dependencies": {},
   "devDependencies": {
+    "babel-core": "*",
+    "babel-eslint": "*",
+    "babel-loader": "*",
+    "babel-plugin-transform-decorators-legacy": "*",
+    "babel-plugin-transform-runtime": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-react": "*",
+    "babel-preset-react-hmre": "*",
+    "babel-preset-stage-0": "*",
     "browser-sync": "*",
+    "del": "*",
+    "eslint": "*",
+    "eslint-loader": "*",
     "gulp": "gulpjs/gulp#4.0",
+    "gulp-babel": "^6.1.2",
     "gulp-load-plugins": "*",
     "gulp-mocha": "*",
     "gulp-sass": "*",
-    "node-sass": "^3.4.2",
-    "sass-true": "*"
+    "node-sass": "*",
+    "react": "*",
+    "react-dom": "*",
+    "sass-true": "*",
+    "webpack": "*",
+    "webpack-dev-middleware": "*",
+    "webpack-hot-middleware": "*"
   }
 }

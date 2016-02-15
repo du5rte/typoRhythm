@@ -1,28 +1,70 @@
 # Typography Magic!
 
-Getting Vertical Rhythm as never been so easy! Pass `@include typoRhythm( )` in your element with a familiar pixel Font Size and it calculates the appropriate `font-size`, `line-height`, `margin-bottom` and `padding` in `rem` units.
+Getting Vertical Rhythm as never been so easy! Pass `typoRhythm( size )`  and it calculates the appropriate `font-size`, `line-height` in ems.
 
 ![alt tag](./demo/screenshot.png)
 
 
 ## Installing
-Available on `bower` or `npm`
+Available on `npm`
 ```bash
-$ bower install --save typorhythm
-$ npm install --save typorhythm
+$ npm install --S typorhythm
 ```
 
 ## Demo
-<p data-height="374" data-theme-id="14935" data-slug-hash="xbzwwx" data-default-tab="result" data-user="monteirocode" class='codepen'>See the Pen <a href='http://codepen.io/monteirocode/pen/xbzwwx/'>TypoRhythm</a> by Eddie Monteiro (<a href='http://codepen.io/monteirocode'>@monteirocode</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-## Using
-Import typoRhythm in your project
-```scss
-@import 'typoRhythm';
+See the Pen [TypoRhythm](http://codepen.io/monteirocode/pen/xbzwwx/) on [CodePen](http://codepen.io)
+and the Inline JavaScript Version [TypoRhythm JS](http://codepen.io/monteirocode/pen/dGroev) on [CodePen](http://codepen.io)
+
+## API
+
+Parameters:
+- `size` expects a `number` e.g. `14, 26, 47, 56`
+- `padding` expects a `number` e.g. `0.5, 1, 2` * `base:24`
+- `margin` expects a `number` e.g. `0.5, 1, 2` * `base:24`
+- `line-height` expects a `number` e.g. `0.5, 1, 2` * `base:24`, should be left to `null`
+- `unit` expect a `string` e.g. `em, rem`
+
+
+## Using in JavaScript (React)
+
+```js
+import typoRhythm from 'typoRhythm'
+
+class Hello extends React.Component {
+  render() {
+    return (
+      <h1 style={ typoRhythm(size: 47, margin: 1) } > Hello World </h1>
+    )
+  }
+}
+```
+Result
+```js
+{
+  fontSize: "2.9375em",
+  padding: null,
+  marginBottom: "0.5106382978723404em",
+  lineHeight: 1.0212765957446808
+}
 ```
 
-Start using it!
+Change the default `base` or `fontsize`:
+```js
+import {TypoRhythm} from 'typoRhythm'
+
+const typoRhythm = new TypoRhythm(14, 32)
+```
+
+
+
+## Using in Sass
+Import typoRhythm in your project
+```scss
+@import 'typorhythm.scss';
+```
+
+Include it in your element
 ```scss
 h3 {
   @include typoRhythm(21);
@@ -37,19 +79,10 @@ h3 {
 }
 ```
 
-## Take control
-
-Parameters:
-- `$size` expects a `number` e.g. `14, 26, 47, 56`
-- `$padding` expects a `number` e.g. `0.5, 1, 2` * `$base:24`
-- `$margin` expects a `number` e.g. `0.5, 1, 2` * `$base:24`
-- `$line-height` expects a `number` e.g. `0.5, 1, 2` * `$base:24`, should be left to `null`
-- `$unit` expect a `string` e.g. `em, rem`
-
-Change default base or fontsize:
+Change the default `base` or `fontsize`:
 ```scss
-$typorhythm_default_base: 24 !default;
-$typorhythm_default_fontsize: 16 !default;
+$typorhythm_base: 24 !default;
+$typorhythm_fontsize: 16 !default;
 ```
 
 Example:
@@ -67,7 +100,7 @@ h3 {
 }
 ```
 
-## Generator
+## typoRhythmGenerator
 Style multiple elements at once!
 
 ```scss

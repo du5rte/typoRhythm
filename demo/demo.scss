@@ -1,37 +1,15 @@
-@import 'typorhythm/typorhythm';
-
-// Use a map to define all elements at once
-$map: (h1:47, h2:34, h3:26, h4:21, h5:18, h6:16, p: 16, ul: 16);
-// And include it in your project
-@include typoRhythmGenerator($map, $margin:1);
-
-// Create custom typoSize($size, $padding, $margin) in your elements
-.title {
-  @include typoRhythm(72, $margin: 2);
-}
-
-.example {
-  @include typoRhythm(21, $margin: 1, $padding: 1);
-}
-
-.fyi {
-  @include typoRhythm(13);
-}
-
-
 ////DEMO STYLES//////////////////////////////////
 $base: 1.5em;
 $colorOne: #2afac6;
 $colorTwo: #4ff7f2;
-$dim: hsla(0, 0%, 100%, 0.29);
+$dim: hsla(0, 0%, 100%, 0.33);
 $transparent: hsla(0, 0%, 100%, 0);
-@import url(http://fonts.googleapis.com/css?family=Raleway:300,700,800);
 html {
   min-height: 100%;
 }
 body {
   color: white;
-  font: 100% 'Raleway', sans-serif;
+  font: 100% 'Open Sans', sans-serif;
   padding: $base $base*2;
   margin: 0 auto;
   max-width: 800px;
@@ -40,10 +18,13 @@ body {
   background-repeat: no-repeat;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 800;
+  font-weight: 900;
+}
+p {
+  font-weight:300;
 }
 b {
-  font-weight: 700;
+  font-weight:600;
 }
 u {
   text-decoration: none;
@@ -68,8 +49,11 @@ pre {
   background: complement($dim);
   overflow: auto;
 }
+.o1 {
+  opacity: 1;
+}
 // Debugger
-body > * {
+h1, h2, h3, h4, h5, h6, p, li {
   &:hover {
     background-image: linear-gradient(-90deg, $transparent, $dim);
   }
