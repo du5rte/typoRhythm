@@ -13,15 +13,16 @@ module.exports = {
 
   devtool: settings.development ? '#eval-source-map' : null,
 
-  context: settings.development ? `${__dirname}/${settings.paths.demo}` : `${__dirname}/${settings.paths.source}`,
+  context: __dirname,
 
   entry: {
-    typorhythm: settings.development ? ['webpack-hot-middleware/client?reload=true', './'] : [`./${settings.name}`]
+    demo: settings.development ? ['webpack-hot-middleware/client?reload=true', './demo/demo'] : ['./demo/demo'],
+    typorhythm: settings.development ? ['webpack-hot-middleware/client?reload=true', './typorhythm/typorhythm'] : ['./typorhythm/typorhythm'],
   },
 
   output: {
-    filename: `[name].min.js`,
-    path: settings.development ? `${__dirname}/${settings.paths.demo}` : `${__dirname}/${settings.paths.source}`
+    path: __dirname,
+    filename: settings.development ? '[name].min.js' : '[name]/[name].min.js'
   },
 
   resolve: {

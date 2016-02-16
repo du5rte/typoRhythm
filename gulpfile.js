@@ -57,7 +57,7 @@ gulp.task('bundle', function(done) {
 // Watcher
 gulp.task('watch', function () {
   browserSync.init({
-    browser: 'google chrome',
+    browser: 'google chrome canary',
     server: settings.paths.demo,
     middleware: [
       webpackDevMiddleware(compiler, {

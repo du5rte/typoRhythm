@@ -2,7 +2,7 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 
 // TypoRhythm
-import typoRhythm from '../typorhythm/typorhythm.es5.js'
+import typoRhythm from '../typorhythm/typorhythm.js'
 
 class Demo extends React.Component {
   render() {

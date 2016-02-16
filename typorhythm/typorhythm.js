@@ -14,6 +14,10 @@ export class TypoRhythm {
     return base / size
   }
 
+  // padding() {
+  //   return ''
+  // }
+
   baseContext(size, multipler=0) {
     return multipler * (this.base / size) + this.unit
   }
@@ -25,6 +29,9 @@ export class TypoRhythm {
   }
 
   render({size, padding, margin, lineHeight, unit} = {}) {
+
+    // detect if passing an object or arguments
+
     return {
       fontSize: this.fontSize(size, unit),
       padding: padding ?  this.baseContext(size, padding) : null,
@@ -38,5 +45,9 @@ export class TypoRhythm {
 export var typoRhythm = new TypoRhythm
 
 export default function(args) {
-  return (new TypoRhythm).render(args)
+  return typoRhythm.render(args)
+}
+
+module.exports = function(args) {
+  return typoRhythm.render(args)
 }
